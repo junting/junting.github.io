@@ -57,9 +57,35 @@
           </tr>
         </tbody></table>
         <table width="100%" align="center" border="0" cellpadding="0"><tbody>
+          <style>
+              @keyframes wave {
+                  0% { transform: rotate(-10deg); }
+                  50% { transform: rotate(10deg); }
+                  100% { transform: rotate(-10deg); }
+              }
+
+              .waving {
+                  display: inline-block;
+                  animation: wave 1s infinite;
+              }
+         </style>
+          <!-- 
+          <tr>
+          <td style="padding-left:20px;width:20%;vertical-align:middle">  06-2024 </td>
+          <td>
+            <span style="color: red;">New!</span>
+            <a href="https://huggingface.co/datasets/MathLLMs/MathVision">Math-Vision</a> is accepted in NeurIPS 2024 Datasets and Benchmarks Track!</td>
+          </tr> -->
+          <tr>
+              <td style="padding-left:20px;width:20%;vertical-align:middle">10-2024</td>
+              <td>
+                  <span style="color: red;" class="waving">New!</span>
+                  <a href="https://huggingface.co/datasets/MathLLMs/MathVision">Math-Vision</a> is accepted in NeurIPS 2024 Datasets and Benchmarks Track!
+              </td>
+          </tr>
           <tr>
           <td style="padding-left:20px;width:20%;vertical-align:middle">  07-2024 </td>
-          <td> We release <a href="https://sam2.metademolab.com/">SAM 2</a>, a unified model for real-time, promptable video object segmentation.</td>
+          <td> <span style="color: red;" class="waving">New!</span> We release <a href="https://sam2.metademolab.com/">SAM 2</a>, a unified model for real-time, promptable video object segmentation.</td>
           </tr>
           <tr>
           <td style="padding-left:20px;width:20%;vertical-align:middle">  06-2024 </td>
@@ -95,17 +121,17 @@
       <tr>
         <td style="padding-left:20px;width:25%"> May 2023 - Nov 2023 </td>
         <td style="width:30%"> <strong><a href="https://ai.facebook.com/">FAIR, Meta AI,</a></strong></td>
-      <td> Reserach Scientist Intern (Multi-Modal Fundation Models). </td>
+      <td> Research Scientist Intern (Multi-Modal Fundation Models). </td>
     </tr>
     <tr>
       <td style="padding-left:20px;width:25%"> Sep 2021 - Mar 2022 </td>
       <td style="width:30%"> <strong><a href="https://research.samsung.com/aicenter_cambridge">Samsung Research AI Center</a></strong></td>
-    <td> Reserach Intern (Efficient Mobile Transformers). </td>
+    <td> Research Intern (Efficient Mobile Transformers). </td>
   </tr>
   <tr>
     <td style="padding-left:20px;width:25%"> Mar 2017 - Dec 2017 </td>
     <td style="width:30%"> <strong><a href="https://www.ee.columbia.edu/ln/dvmm/">DVMM Lab, Columbia University</a></strong></td>
-  <td> Reserach Assistant (Online Action Dectection). </td>
+  <td> Research Assistant (Online Action Dectection). </td>
 </tr>
   </tbody></table>
 
@@ -115,6 +141,52 @@
               <heading>Research</heading>
               <p>
               </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;""><tbody>
+          <tr onmouseout="figure_stop()" onmouseover="figure_start()">
+            <td style="padding-left:20px;padding-top:00px;width:25%;vertical-align:middle">
+              <div class="one">
+              <video width="100%" playsinline="" autoplay="" muted="" loop="">
+                <source src="images/sam2_output.mp4" type="video/mp4">
+              </video>
+              </div>
+              <script type="text/javascript">
+                function figure_start() {
+                  document.getElementById('figure').style.opacity = "1";
+                }
+
+                function figure_stop() {
+                  document.getElementById('figure').style.opacity = "0";
+                }
+                figure_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2408.00714">
+                <papertitle>SAM 2: Segment Anything in Images and Videos
+                </papertitle>
+              </a>
+              <br>
+              Nikhila Ravi, Valentin Gabeur, Yuan-Ting Hu, Ronghang Hu, Chaitanya Ryali, Tengyu Ma, Haitham Khedr,
+              Roman Rädle, Chloe Rolland, Laura Gustafson, Eric Mintun, 
+              <br>
+              <b>Junting Pan</b>, Kalyan Vasudev Alwala, Nicolas Carion,Chao-Yuan Wu Ross Girshick, 
+              <br>
+              Piotr Dollár, Christoph Feichtenhofer
+              <br>
+              <em>Arxiv</em>, 2024
+              <br>
+              <a href="https://arxiv.org/abs/2408.00714">[paper]</a>
+              <!-- <a href="data/2023_zero_shot_qa.bib">bibtex</a> -->
+              <a href="https://ai.meta.com/sam2/">[website]</a>
+              <a href="https://sam2.metademolab.com/">[demo]</a>
+              <a href="https://github.com/facebookresearch/segment-anything-2">[code]</a>
+              <p></p>
+              <p>
+                <font color=3D"crimson"> We present Segment Anything Model 2 (SAM 2 ), a foundation model towards solving promptable visual segmentation in images and videos. 
             </td>
           </tr>
         </tbody></table>
@@ -139,18 +211,19 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2402.14804">
+              <a href="https://arxiv.org/abs/2307.00716">
                 <papertitle>Measuring Multimodal Mathematical Reasoning with the MATH-Vision Dataset
                 </papertitle>
               </a>
               <br>
               K. Wang*, <b>J. Pan*</b> and W. Shi* and Z. Lu and M. Zhan and H. Li
               <br>
-              <em>Arxiv</em>, 2024
+              <em>NeurIPS</em>, 2024
               <br>
-              <a href="https://arxiv.org/abs/2307.00716">arXiv</a>,
+              <a href="https://arxiv.org/abs/2307.00716">[paper]</a>
               <!-- <a href="data/2023_zero_shot_qa.bib">bibtex</a> -->
-              <a href="https://mathvision-cuhk.github.io/">github</a>
+              <a href="https://mathvision-cuhk.github.io/">[website]</a>
+              <a href="https://github.com/mathllm/MATH-V">[code]</a>
               <p></p>
               <p>
                 <font color=3D"crimson"> Math-Vision (Math-V), a curated collection of 3,040 high-quality mathematical problems with visual contexts sourced from real math competitions that provides a comprehensive and diverse set of challenges for evaluating the mathematical reasoning abilities of LMMs.
@@ -161,7 +234,7 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;""><tbody>
           <tr onmouseout="figure_stop()" onmouseover="figure_start()">
-            <td style="padding-left:20px;padding-top:50px;width:25%;vertical-align:middle">
+            <td style="padding-left:20px;padding-top:30px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='figure'>
                   <img src='images/journeydb.png' width="160"></div>
@@ -188,9 +261,9 @@
               <br>
               <em>NeurIPS</em>, 2023
               <br>
-              <a href="https://arxiv.org/abs/2307.00716">arXiv</a>,
+              <a href="https://arxiv.org/abs/2307.00716">[paper]</a>
               <!-- <a href="data/2023_zero_shot_qa.bib">bibtex</a> -->
-              <a href="https://github.com/JourneyDB/JourneyDB">github</a>
+              <a href="https://github.com/JourneyDB/JourneyDB">[website]</a>
               <p></p>
               <p>
                 <font color=3D"crimson"> JourneyDB is a large-scale generated image understanding dataset that contains 4,4M high-resolution generated images, annotated with corresponding text prompt, image caption, and visual question answering.
@@ -227,8 +300,8 @@
               <br>
               <em>ICCVW</em>, 2023
               <br>
-              <a href="https://arxiv.org/pdf/2306.11732">arXiv</a>,
-              <a href="data/2023_zero_shot_qa.bib">bibtex</a>
+              <a href="https://arxiv.org/pdf/2306.11732">[paper]</a>
+              <!-- <a href="data/2023_zero_shot_qa.bib">bibtex</a> -->
               <p></p>
               <p>
                 <font color=3D"crimson"> We propose a simple yet effective Retrieving-to-Answer (R2A) framework and achieves SOTA videoQA with zero training.
@@ -266,9 +339,9 @@
               <br>
               <em>NeurIPS</em>, 2022
               <br>
-              <a href="https://arxiv.org/pdf/2206.13559">arXiv</a>, 
-              <a href="data/2022_neurips.bib">bibtex</a>, 
-              <a href="https://github.com/linziyi96/st-adapter">github</a>
+              <a href="https://arxiv.org/pdf/2206.13559">[paper]</a>
+              <!-- <a href="data/2022_neurips.bib">bibtex</a>,  -->
+              <a href="https://github.com/linziyi96/st-adapter">[code]</a>
               <p></p>
               <p>
                 <font color=3D"crimson"> We propose a SpatioTemporal Adapter (ST-Adapter) for image-to-video transfer learning.
@@ -308,9 +381,9 @@
               <br>
               <em>ECCV</em>, 2022
               <br>
-              <a href="https://arxiv.org/pdf/2205.03436">arXiv</a>, 
-              <a href="data/2022_edgevit.bib">bibtex</a>, 
-              <a href="https://github.com/saic-fi/edgevit">github</a>
+              <a href="https://arxiv.org/pdf/2205.03436">[paper]</a>
+              <!-- <a href="data/2022_edgevit.bib">bibtex</a>,  -->
+              <a href="https://github.com/saic-fi/edgevit">[code]</a>
               <p></p>
               <p>
                 We introduce EdgeViTs, a new family of light-weight ViTs that for the first time, enable attention based vision models to compete with
@@ -348,9 +421,9 @@
               <br>
               <em>CVPR</em>, 2021
               <br>
-              <a href="https://arxiv.org/pdf/2006.07976">arXiv</a>, 
-              <a href="data/2021_cvpr.bib">bibtex</a>, 
-              <a href="https://github.com/Siyu-C/ACAR-Net">github</a>
+              <a href="https://arxiv.org/pdf/2006.07976">[paper]</a>
+              <!-- <a href="data/2021_cvpr.bib">bibtex</a>,  -->
+              <a href="https://github.com/Siyu-C/ACAR-Net">[code]</a>
               <p></p>
               <p>
                 We propose to explicitly model the Actor-Context-Actor Relation, 
@@ -389,9 +462,9 @@
               <br>
               <em>CVPR</em>, 2019
               <br>
-              <a href="https://arxiv.org/pdf/1903.04480">arXiv</a>, 
-              <a href="data/2019_cvpr.bib">bibtex</a>
-              <a href="https://github.com/junting/seg2vid">github</a>
+              <a href="https://arxiv.org/pdf/1903.04480">[paper]</a>
+              <!-- <a href="data/2019_cvpr.bib">bibtex</a> -->
+              <a href="https://github.com/junting/seg2vid">[code]</a>
               <p></p>
               <p>
                 We present a two-stage framework for video synthesis conditioned on a single semantic label map.
@@ -430,8 +503,8 @@
               <br>
               <em>ECCV</em>, 2018
               <br>
-              <a href="https://openaccess.thecvf.com/content_ECCV_2018/html/Zheng_Shou_Online_Detection_of_ECCV_2018_paper.html">arXiv</a>, 
-              <a href="data/2018_eccv.bib">bibtex</a>
+              <a href="https://openaccess.thecvf.com/content_ECCV_2018/html/Zheng_Shou_Online_Detection_of_ECCV_2018_paper.html">[paper]</a>
+              <!-- <a href="data/2018_eccv.bib">bibtex</a> -->
               <!-- <a href="https://github.com/junting/seg2vid">github</a> -->
               <p></p>
               <p>
@@ -469,9 +542,9 @@
               <b>J. Pan</b>*, K. McGuinness*, NE. O'Connor, E. Sayrol, X. Giro-i-Nieto          <br>
               <em>CVPR</em>, 2016
               <br>
-              <a href="https://openaccess.thecvf.com/content_cvpr_2016/papers/Pan_Shallow_and_Deep_CVPR_2016_paper.pdf">arXiv</a>, 
-              <a href="data/2016_cvpr.bib">bibtex</a>
-              <!-- <a href="https://github.com/junting/seg2vid">github</a> -->
+              <a href="https://openaccess.thecvf.com/content_cvpr_2016/papers/Pan_Shallow_and_Deep_CVPR_2016_paper.pdf">[paper]</a>
+              <!-- <a href="data/2016_cvpr.bib">bibtex</a> -->
+              <a href="https://github.com/imatge-upc/saliency-2016-cvpr">[code]</a>
               <p></p>
               <p>
                We present the first end-to-end CNN based saliency prediction network.</p>
